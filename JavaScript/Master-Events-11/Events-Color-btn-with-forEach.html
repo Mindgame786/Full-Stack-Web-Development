@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Color Buttons</title>
+  <style>
+    button {
+      margin: 5px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+  <button data-color="red">Red</button>
+  <button data-color="yellow">Yellow</button>
+  <button data-color="green">Green</button>
+  <button data-color="black">Black</button>
+  <button data-color="white">White</button>
+  <button data-color="orange">Orange</button>
+  <button data-color="blue">Blue</button>
+  <button data-color="pink">Pink</button>
+
+  <script>
+
+    const body = document.body;
+
+    document.querySelectorAll("button[data-color]").forEach((btn) => {
+      btn.onclick = () => {
+        body.style.background = btn.dataset.color;
+      };
+    });
+  </script>
+
+</body>
+
+</html>

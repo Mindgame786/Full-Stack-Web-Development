@@ -1,0 +1,80 @@
+/* Reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+/* Containers */
+.marquee-container1,
+.marquee-container2 {
+  overflow: hidden;
+  border-top: 5px double yellow;
+  border-bottom: 5px double yellow;
+  color: white;
+  font-size: 20px;
+  padding: 15px 0;
+  position: relative;
+  white-space: nowrap;
+}
+
+/* Background colors */
+.marquee-container1 {
+  background-color: rgb(245, 62, 71);
+}
+
+.marquee-container2 {
+  background-color: rgb(19, 2, 255);
+  margin-top: 20px;
+}
+
+/* Track that moves */
+.marquee-track1 {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-track2 {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: scroll-right 200s linear infinite;
+}
+
+/* Text inside track */
+.marquee-text1 {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100px;
+}
+
+.marquee-text2 {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100px;
+}
+
+/* Keyframes */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes scroll-right {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}

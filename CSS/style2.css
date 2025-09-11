@@ -1,0 +1,156 @@
+/* ==== Reset ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==== Navbar ==== */
+ul {
+  background: rgb(37, 3, 123);
+  padding: 20px;
+  border-radius: 5px;
+  font-family: sans-serif;
+  font-size: 18px;
+  color: antiquewhite;
+
+  display: flex;
+  flex-wrap: wrap;
+  /* ✅ responsive wrapping */
+  justify-content: center;
+  /* یا space-evenly */
+  gap: 10px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: antiquewhite;
+  text-decoration: none;
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: cyan;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* ==== Box2 ==== */
+#box2 {
+  margin: 60px auto;
+  width: 90%;
+  max-width: 300px;
+  height: 300px;
+  background-color: deepskyblue;
+  border-radius: 20px;
+  /* transition: all 1s ease; */
+  /* transform: rotate(0deg); */
+  transition: all 2s ease-in-out;
+  transform: rotate(0deg) scale(1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform: rotate(92deg); */
+}
+
+#box2:hover {
+  transform: rotate(360deg);
+  transition: all 2s ease;
+  /* transform: translateY(-900px); */
+  transform: translate(-900px, 300px);
+  /* X,Y */
+  transform: skew(15deg);
+  /* transform: translateX(-900px); */
+  /* transform: scale(2); */
+  /* transform: scale(1, 2); */
+  /* transform: scaleX(2) */
+  /* transform: scaleY(2) */
+  /* Width  X or Hight or Y */
+}
+
+#small2 {
+  width: 150px;
+  height: 150px;
+  background-color: darkblue;
+  border-radius: 50%;
+
+}
+
+/* Trsnsitions ... */
+
+#small2:hover {
+  background-color: yellow;
+  /* transition-property:all; */
+  /* transition-duration: 2s; */
+  /* transition-timing-function: ease-in-out; */
+  /* transition-delay: 1s; */
+  /* transition: all 2s ease-in .2s; */
+  transition: 2s;
+
+}
+
+
+
+/* ==== Paragraph ==== */
+#para {
+  margin: 30px auto;
+  padding: 10px;
+  max-width: 95%;
+  justify-items: center;
+}
+
+#para>p {
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 20px;
+  text-align: justify;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+#para>h1 {
+  font-family: sans-serif;
+  color: #00e1ff;
+}
+
+
+
+
+/* ==== Media Queries ==== */
+@media (max-width: 499px) {
+  #para>p {
+    font-size: .8rem;
+    background-color: bisque;
+    color: brown;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 700px) {
+  #para>p {
+    font-size: 1rem;
+    color: white;
+    background-color: #0230ff;
+  }
+}
+
+@media (min-width: 701px) and (max-width: 900px) {
+  #para>p {
+    font-size: 1.4rem;
+    color: red;
+    background-color: #06ff1b;
+  }
+}
+
+@media (min-width: 901px) and (max-width: 1400px) {
+  #para>p {
+    font-size: 1.6rem;
+    color: red;
+    background-color: #fdff91;
+  }
+}

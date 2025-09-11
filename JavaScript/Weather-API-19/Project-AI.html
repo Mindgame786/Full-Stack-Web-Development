@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌤️ Elegant Weather App</title>
+
+  <!-- ✅ 100% Working Realistic Favicon Integration -->
+  <link rel="icon" href="favicon.png" type="image/png" sizes="32x32" />
+  <link rel="apple-touch-icon" href="favicon.png" />
+  <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background: rgba(255, 255, 255, 0.9);
+      border: 1px solid #cce7f0;
+      backdrop-filter: blur(8px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      width: 100%;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 25px;
+      color: #0077b6;
+    }
+
+    .input-section {
+      display: flex;
+      width: 100%;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .input-section input,
+    .input-section button {
+      padding: 14px;
+      font-size: 1rem;
+      border-radius: 10px;
+      border: 1px solid #cce7f0;
+    }
+
+    input {
+      flex: 1;
+      background-color: #f4faff;
+      color: #333;
+    }
+
+    button {
+      background: linear-gradient(135deg, #90e0ef, #00b4d8);
+      color: white;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      border: none;
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #00b4d8, #0077b6);
+    }
+
+    .error {
+      background: rgba(255, 0, 0, 0.1);
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+      color: #b00020;
+      width: 100%;
+    }
+
+    .result {
+      margin-top: 20px;
+      background: #f9fdff;
+      padding: 30px;
+      border-radius: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+      width: 100%;
+      border: 1px solid #e0f2f1;
+    }
+
+    .result img {
+      width: 90px;
+      height: 90px;
+    }
+
+    .result p {
+      flex: 1 1 200px;
+      margin: 8px 0;
+      font-size: 1.05rem;
+      text-align: left;
+      color: #333;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 0.85rem;
+      color: #777;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>🌤️ Weather App</h1>
+    <div class="input-section">
+      <input id="city" type="text" placeholder="Enter City Name" />
+      <button onclick="getWeather()">Check</button>
+    </div>
+    <div id="error" class="error" style="display:none;"></div>
+    <div id="weather" class="result" style="display:none;"></div>
+    <footer>Created by <strong>World-Class Developer™</strong></footer>
+  </div>
+
+  <script>
+    const API_KEY = "271af702b137689bc26a09bdb19cd39f";
+
+    async function getWeather() {
+      const city = document.getElementById("city").value.trim();
+      const error = document.getElementById("error");
+      const weatherBox = document.getElementById("weather");
+      error.style.display = "none";
+      weatherBox.style.display = "none";
+
+      if (!city) {
+        error.innerText = "⚠️ Please enter a city name!";
+        error.style.display = "block";
+        return;
+      }
+
+      const url = `https://api.openweathermap.org/data/2.5/weather?q=${encodeURIComponent(city)}&appid=${API_KEY}&units=metric`;
+
+      try {
+        const res = await fetch(url);
+        if (!res.ok) throw new Error("City not found");
+        const data = await res.json();
+
+        const { name, sys, main, wind, weather, timezone } = data;
+        const icon = weather[0].icon;
+        const description = weather[0].description;
+        const condition = weather[0].main;
+
+        const sunrise = new Date((sys.sunrise + timezone) * 1000).toUTCString().slice(-12, -4);
+        const sunset = new Date((sys.sunset + timezone) * 1000).toUTCString().slice(-12, -4);
+
+        weatherBox.innerHTML = `
+          <img src="https://openweathermap.org/img/wn/${icon}@2x.png" alt="${description}" />
+          <p><strong>📍 Location:</strong> ${name}, ${sys.country}</p>
+          <p><strong>🌤️ Condition:</strong> ${condition} (${description})</p>
+          <p><strong>🌡️ Temp:</strong> ${main.temp} °C</p>
+          <p><strong>💧 Humidity:</strong> ${main.humidity}%</p>
+          <p><strong>🌬️ Wind:</strong> ${wind.speed} km/h</p>
+          <p><strong>🌅 Sunrise:</strong> ${sunrise}</p>
+          <p><strong>🌇 Sunset:</strong> ${sunset}</p>
+        `;
+
+        weatherBox.style.display = "flex";
+      } catch (err) {
+        error.innerText = "❌ City not found. Try again!";
+        error.style.display = "block";
+      }
+    }
+
+
+  </script>
+</body>
+
+</html>

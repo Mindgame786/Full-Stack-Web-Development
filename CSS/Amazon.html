@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amazon Clone</title>
+  <link rel="icon" type="image/png" href="./images/Amazon-icon-in-flat-design-on-transparent-background-PNG.png">
+  <link rel="stylesheet" href="Amazon.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+
+  <!-- Header/Navbar -->
+  <header>
+    <div class="navbar">
+
+      <!-- Logo -->
+      <div class="nav-logo">
+        <div class="amazon-logo border"></div>
+      </div>
+
+      <!-- Country -->
+      <div class="nav-country border">
+        <p class="p1">Deliver to</p>
+        <div class="address-icon">
+          <i class="fa-solid fa-location-dot"></i>
+          <p class="p2">Pakistan</p>
+        </div>
+      </div>
+
+      <!-- Search Bar -->
+      <div class="nav-search">
+        <select class="search-select">
+          <option value="all">All</option>
+          <option value="books">Books</option>
+          <option value="electronics">Electronics</option>
+          <option value="fashion">Fashion</option>
+        </select>
+        <input type="text" placeholder="Search Amazon" />
+        <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+      <!-- Language Flag -->
+      <div class="nav-flag border">
+        <div class="flag"></div>
+        <p>ENG <i class="fa-solid fa-sort-down"></i></p>
+      </div>
+
+      <!-- Sign In -->
+      <div class="nav-signin border">
+        <p class="p1">Hello, Sign in</p>
+        <div class="Al-down">
+          <p class="p2">Accounts & Lists <i class="fa-solid fa-sort-down"></i></p>
+        </div>
+      </div>
+
+      <!-- Orders -->
+      <div class="nav-orders border">
+        <p class="p1">Returns</p>
+        <p class="p2">& Orders</p>
+      </div>
+
+      <!-- Cart -->
+      <div class="nav-cart border">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <p class="p2">Cart</p>
+      </div>
+    </div>
+
+    <!-- Lower Menu Bar -->
+    <div class="bar">
+      <div class="bar-menu">
+        <i class="fa-solid fa-bars"></i>
+        All
+      </div>
+      <div class="bar-items">
+        <p>Today's Deals</p>
+        <p>Customer Service</p>
+        <p>Registry</p>
+        <p>Prime Video</p>
+        <p>Gift Card</p>
+        <p>Sell</p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Slider Section -->
+  <div class="slider-container">
+    <div class="slides-wrapper" id="slidesWrapper">
+      <div class="slide">
+        <img src="./images/slider21.webp" alt="Slide 1" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider7.jpg" alt="Slide 2" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider24.png" alt="Slide 3" />
+      </div>
+      <div class="slide">
+        <img src="./images/Slider3.jpg" alt="Slide 4" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider31.jpg" alt="Slide 5" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider30.jpg" alt="Slide 6" />
+      </div>
+      <div class="slide">
+        <img src="./images/slider32.jpg" alt="Slide 7" />
+      </div>
+    </div>
+
+
+    <button class="prev">&#10094;</button>
+    <button class="next">&#10095;</button>
+  </div>
+
+  <!-- Product Section -->
+  <div class="product-section">
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Clothes</h2>
+        <img src="./images/clothe2.jpg" alt="Bad Style" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Deals Fitness</h2>
+        <img src="./images/fitnesdeal.jpg" alt="Cleaning Tool" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Equipment</h2>
+        <img src="./images/equiment.jpg" alt="Decor" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Trackers</h2>
+        <img src="./images/Tracker.jpg" alt="Home Storage" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Men Watch</h2>
+        <img src="./images/watch10.webp" alt="Men Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Women Watch</h2>
+        <img src="./images/watch2.webp" alt="Women Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Girl Watch</h2>
+        <img src="./images/watch5.jpg" alt="Girl Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Boy Watch</h2>
+        <img src="./images/watch8.webp" alt="Boy Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="box-data">
+        <h2>LCD</h2>
+        <img src="./images/tv1.webp" alt="Men Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>HD Camera</h2>
+        <img src="./images/camera.avif" alt="Women Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>HeadPhone</h2>
+        <img src="./images/head.webp" alt="Girl Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="box-data">
+        <h2>Laptop</h2>
+        <img src="./images/laptop.webp" alt="Boy Watch" class="box-image">
+        <p>Shop Now</p>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="buttom-box">
+    <div class="blank"></div>
+    <p>See personalized recommendations</p>
+    <button>Sign in</button>
+    <p>New custom? <a href="#">Start here.</a></p>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-panel1">
+      <p>Back to top</p>
+    </div>
+
+    <div class="footer-panel2">
+      <div class="footer-column">
+        <p>Get to Know Us</p>
+        <ul>
+          <li><a>Careers</a></li>
+          <li><a>Blog</a></li>
+          <li><a>About Amazon</a></li>
+          <li><a>Investor Relations</a></li>
+          <li><a>Amazon Devices</a></li>
+          <li><a>Amazon Science</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-column">
+        <p>Make Money with Us</p>
+        <ul>
+          <li><a>Sell products on Amazon</a></li>
+          <li><a>Sell on Amazon Business</a></li>
+          <li><a>Sell apps on Amazon</a></li>
+          <li><a>Become an Affliate</a></li>
+          <li><a>Advertise Your Products</a></li>
+          <li><a>Self-Publish with Us</a></li>
+          <li><a>Host an Amazon Hub</a></li>
+          <li><a><i class="fa-solid fa-angle-right"></i> See More Make Money <br>With Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>Amazon Payment Products</p>
+        <ul>
+          <li><a>Amazon Business Card</a></li>
+          <li><a>Shop with Points</a></li>
+          <li><a>Reload Your Balance</a></li>
+          <li><a>Amazon Currency Converter</a></li>
+
+        </ul>
+      </div>
+      <div class="footer-column">
+        <p>Let Us Help You</p>
+        <ul>
+          <li><a>Amazon and COVID-<br>19</a></li>
+          <li><a>Your Account</a></li>
+          <li><a>Your Orders</a></li>
+          <li><a>Shipping Rates & <br> Polices</a></li>
+          <li><a>Returns & <br>Replacements</a></li>
+          <li><a>Manage Your <br>Content and <br>Help</a></li>
+        </ul>
+      </div>
+
+      <!-- Repeat .footer-column for each section -->
+    </div>
+
+
+
+
+    <div class="footer-panel3">
+
+      <div class="footer-logo"></div>
+
+      <div class="footer-options">
+
+        <div class="footer-box1">
+
+          <i class="fa-solid fa-globe"></i>
+          <span>English</span>
+          <div class="lang-arrows">
+            <i class="fa-solid fa-caret-up"></i>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+
+
+
+
+        <div class="footer-box2">
+          <span>$ USD - U.S. Dollar</span>
+        </div>
+
+        <div class="footer-box3">
+          <img src="./images/Flag_of_the_United_States.png" alt="US Flag" width="20px" height="15px">
+          <span>United States</span>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- footer-panel4....... -->
+
+
+    <div class="footer-panel4-">
+      <div class="footer-column4-">
+
+        <ul>
+          <div class="c1">
+            <p>Amazon Music</p>
+
+            <li><a>Stream millions <br>
+                of songs</a></li>
+
+          </div>
+
+
+
+          <div class="c2">
+            <p>Amazon Business</p>
+            <li><a>Everything For <br>
+                Your Business</a></li>
+
+          </div>
+
+
+
+          <div class="c3">
+
+            <p>IMDbPro</p>
+            <li><a>Get Info <br> Entertainment <br>
+                Professionals Need</a></li>
+          </div>
+        </ul>
+      </div>
+
+
+
+
+      <div class="footer-column4-">
+        <ul>
+          <div class="c4">
+            <p>Amazon Ads</p>
+            <li><a>Reach customers <br>
+                wherever they <br>
+                spend their time</a></li>
+
+          </div>
+
+
+
+          <div class="c5">
+
+            <p>AmazonGlobal</p>
+            <li><a>Ship Orders <br>
+                Internationally</a></li>
+
+          </div>
+
+          <div class="c6">
+
+
+            <p>Kindle Direct Publishing</p>
+            <li><a>Indie Digital & <br> Print Publishing <br>
+                Made Easy</a></li>
+          </div>
+
+          <div class="c7">
+
+
+            <p>eero WiFi</p>
+            <li><a>Stream 4K Video <br>
+                in Every Room</a></li>
+
+          </div>
+
+        </ul>
+      </div>
+      <div class="footer-column4-">
+        <ul>
+          <div class="c8">
+
+            <p>
+              6pm</p>
+            <li><a>Score deals <br>
+                on fashion brands</a></li>
+
+
+          </div>
+
+          <div class="c9">
+
+
+            <p>
+              Amazon Web <br> Services</p>
+            <li><a>Scalable Cloud <br>
+                Computing <br> Services</a></li>
+
+          </div>
+
+          <div class="c10">
+
+
+            <p>Prime Video Direct</p>
+            <li><a>Video Distribution <br>
+                Made Easy</a></li>
+
+          </div>
+
+          <div class="c11">
+
+            <p>Blink</p>
+            <li><a>Smart Security <br>
+                for Every Home</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-column4-">
+        <ul>
+          <div class="c12">
+
+            <p>AbeBooks</p>
+            <li><a>Books, art <br>
+                & collectibles</a></li>
+
+          </div>
+
+
+          <div class="c13">
+
+
+
+            <p>
+              Audible</p>
+
+            <li><a>Listen to Books & <br> Original
+                Audio <br> Performances</a></li>
+
+          </div>
+
+          <div class="c14">
+
+
+
+            <p>
+              Shopbop</p>
+            <li><a>Designer <br>
+                Fashion Brands</a></li>
+
+          </div>
+
+          <div class="c15">
+
+            <p>Neighbors App</p>
+            <li><a>Real-Time Crime <br>
+                & Safety Alerts</a></li>
+
+          </div>
+        </ul>
+      </div>
+      <div class="footer-column4-">
+        <ul>
+          <div class="c16">
+
+            <p>
+              ACX</p>
+            <li><a>Audiobook <br> Publishing
+                <br> Made Easy</a></li>
+
+          </div>
+
+
+          <div class="c17">
+
+
+            <p>
+              Box Office Mojo</p>
+            <li><a>Find Movie <br>
+                Box Office Data</a></li>
+
+          </div>
+
+          <div class="c18">
+
+
+            <p>
+              Woot!</p>
+
+            <li><a>Deals and <br>
+                Shenanigans</a></li>
+
+          </div>
+
+          <div class="c19">
+
+            <p>
+              Amazon <br> Subscription Boxes</p>
+
+            <li><a>Top subscription <br> boxes - right to <br> your door</a></li>
+          </div>
+        </ul>
+      </div>
+
+
+      <div class="footer-column4-">
+
+        <ul>
+          <div class="c20">
+
+            <p>
+              Sell on Amazon</p>
+            <li><a>Start a Selling <br> Account</a></li>
+
+          </div>
+
+          <div class="c21">
+
+
+
+            <p>Goodreads</p>
+            <li><a>Book reviews <br>
+                & <br> recommendations</a></li>
+
+          </div>
+
+
+          <div class="c22">
+
+
+            <p>
+              Zappos</p>
+            <li><a>Shoes & <br>
+                Clothing</a></li>
+
+          </div>
+
+
+          <div class="c23">
+
+
+            <p>
+              PillPack</p>
+
+            <li><a>Pharmacy <br> Simplified</a></li>
+          </div>
+        </ul>
+      </div>
+      <div class="footer-column4-">
+        <ul>
+          <div class="c24">
+
+            <p>
+              Veeqo</p>
+            <li><a>Shipping Software <br>
+                Inventory <br> Management</a></li>
+
+
+          </div>
+
+          <div class="c25">
+
+
+            <p>
+              IMDb</p>
+
+            <li><a>Movies, TV <br>
+                & Celebrities</a></li>
+
+          </div>
+
+          <div class="c26">
+            <p>
+              Ring</p>
+            <li><a>Smart Home <br>
+                Security Systems</a></li>
+          </div>
+        </ul>
+      </div>
+
+      <!-- Repeat .footer-column for each section -->
+    </div>
+
+
+    <!-- footer-panel4...... -->
+
+    <div class="footer-panel4">
+      <div class="footer-options2">
+
+        <span class="c27">
+
+          <a>Conditions of Use</a>
+
+        </span>
+
+        <span class="c28">
+
+          <a>Privacy Notice</a>
+
+        </span>
+
+        <span class="c29">
+
+          <a>Consumer Health Data Privacy Disclosure</a>
+
+        </span>
+
+        <span class="c30">
+          <a>Your Ads Privacy Choices</a>
+
+        </span>
+      </div>
+
+      <div class="footer-copyright">
+        <span class="c31">
+
+          <i class="fa-regular fa-copyright"></i> 1996-2025, Amazon.con,Inc. or its affiliates
+
+        </span>
+      </div>
+
+    </div>
+
+
+
+
+  </footer>
+
+
+
+
+  <!-- Slider Script -->
+  <script>
+    let slidesWrapper = document.getElementById("slidesWrapper");
+    let totalSlides = slidesWrapper.children.length;
+    let currentIndex = 0;
+
+    document.querySelector(".next").addEventListener("click", () => {
+      moveToNextSlide();
+      resetAutoSlide();
+    });
+
+    document.querySelector(".prev").addEventListener("click", () => {
+      moveToPrevSlide();
+      resetAutoSlide();
+    });
+
+    function moveToNextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlider();
+    }
+
+    function moveToPrevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      updateSlider();
+    }
+
+    function updateSlider() {
+      slidesWrapper.style.transform = `translateX(-${currentIndex * 100}vw)`;
+    }
+
+    let slideInterval = setInterval(moveToNextSlide, 3000);
+
+    function resetAutoSlide() {
+      clearInterval(slideInterval);
+      slideInterval = setInterval(moveToNextSlide, 3000);
+    }
+  </script>
+
+</body>
+
+
+
+</html>

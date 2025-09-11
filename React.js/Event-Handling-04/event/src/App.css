@@ -1,0 +1,163 @@
+#root {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  /* border: 2px solid black; */
+
+}
+
+/* --------------------------------
+   1. Root Variables (Custom Theme)
+-------------------------------- */
+:root {
+  --brand-color: #2563eb;
+  /* Blue */
+  --secondary-color: #9333ea;
+  /* Purple */
+  --danger-color: #dc2626;
+  /* Red */
+  --font-heading: 'Poppins', sans-serif;
+  --font-body: 'Inter', sans-serif;
+}
+
+/* --------------------------------
+   2. Scrollbar Styling
+-------------------------------- */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f3f4f6;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-color);
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--secondary-color);
+}
+
+/* --------------------------------
+   3. Text Selection Styling
+-------------------------------- */
+::selection {
+  background: var(--brand-color);
+  color: #fff;
+}
+
+/* --------------------------------
+   4. Pseudo-elements (::before / ::after)
+-------------------------------- */
+.btn::before {
+  content: "🔥 ";
+  margin-right: 4px;
+}
+
+.btn::after {
+  content: " ✅";
+  margin-left: 4px;
+}
+
+/* --------------------------------
+   5. Custom Animations
+-------------------------------- */
+@keyframes wiggle {
+
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+
+  50% {
+    transform: rotate(3deg);
+  }
+}
+
+.wiggle {
+  animation: wiggle 1s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.8s ease forwards;
+}
+
+/* --------------------------------
+   6. Native Form Controls
+-------------------------------- */
+input[type="checkbox"],
+input[type="radio"],
+input[type="range"] {
+  accent-color: var(--brand-color);
+}
+
+/* --------------------------------
+   7. File Upload Button
+-------------------------------- */
+input[type="file"]::file-selector-button {
+  background: var(--brand-color);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="file"]::file-selector-button:hover {
+  background: var(--secondary-color);
+}
+
+/* --------------------------------
+   8. Smooth Scroll
+-------------------------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --------------------------------
+   9. Aspect Ratio Fallback (for older browsers)
+-------------------------------- */
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 ratio */
+  height: 0;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* --------------------------------
+   10. 3rd-Party Library Overrides
+-------------------------------- */
+.react-datepicker {
+  border: 2px solid var(--brand-color);
+  border-radius: 6px;
+}
+
+.chartjs-tooltip {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+}

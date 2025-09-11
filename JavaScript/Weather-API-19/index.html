@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- =========================================
+       Basic Meta Configuration & Page Setup
+  ========================================== -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+
+  <!-- =========================================
+       Stylesheets
+  ========================================== -->
+  <link rel="stylesheet" href="index.css">
+
+  <!-- Font Awesome CDN (Icons Library) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+
+  <!-- =========================================
+       Weather App Main Container
+  ========================================== -->
+  <div class="container">
+
+    <!-- App Title -->
+    <h1>Weather App</h1>
+
+    <!-- Search Input and Button -->
+    <div class="search-bar">
+      <input type="text" id="city" placeholder="Enter City Name">
+      <button id="searchbtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <!-- Error Message (hidden by default) -->
+    <div id="error" class="error-message"></div>
+
+    <!-- Weather Result Display -->
+    <div id="weather" class="weather-info hidden">
+
+      <!-- City Name -->
+      <h2 id="cityname">Lahore</h2>
+
+      <!-- Weather Condition with Icon -->
+      <div id="condition" class="condition"></div>
+
+      <!-- Temperature, Wind Speed, Humidity -->
+      <div class="details">
+        <div id="Temperature">
+          <!-- <i class="fa-solid fa-temperature-three-quarters"></i> -->
+          <span id="temperature"></span>
+        </div>
+
+        <div id="Windspeed">
+          <!-- <i class="fa-solid fa-wind"></i> -->
+          <span id="windspeed"></span>
+        </div>
+
+        <div id="Humidity">
+          <!-- <i class="fa-solid fa-droplet"></i> -->
+          <span id="humidity"></span>
+        </div>
+
+        <!-- Footer Note -->
+        <p>Made By : UMAR JUTT</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================
+       JavaScript File (Functionality)
+  ========================================== -->
+  <script src="index.js"></script>
+
+</body>
+
+</html>

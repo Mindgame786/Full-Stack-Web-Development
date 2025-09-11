@@ -1,0 +1,48 @@
+div {
+  height: 500px;
+  background: #cccdfc;
+  font-family: sans-serif;
+  padding-top: 20px;
+  border: 8px solid #b9019b;
+}
+
+
+h1 {
+  text-align: center;
+  color: #ff5100e0;
+}
+
+body {
+  text-align: center;
+
+}
+
+h3 {
+  color: rgb(46, 9, 255);
+  font-weight: bold;
+}
+
+h3:hover {
+  color: rgb(7, 167, 230);
+}
+
+.para {
+  color: rgb(247, 78, 219);
+  font-weight: bold;
+}
+
+button {
+  background-color: rgb(0, 81, 255);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  /* visibility: hidden; */
+
+}
+
+button:hover {
+  background: rgb(40, 40, 255);
+  color: rgb(255, 234, 208);
+}

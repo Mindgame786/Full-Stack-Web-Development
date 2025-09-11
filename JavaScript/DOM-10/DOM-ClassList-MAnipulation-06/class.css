@@ -1,0 +1,44 @@
+.one {
+  background-color: aqua;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(255, 93, 228), rgb(0, 255, 242));
+  padding: 6px 0px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.two {
+  background-color: aqua;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(124, 246, 255), rgb(108, 255, 120));
+  padding: 6px 0px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+
+}
+
+.three {
+  background-color: aqua;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2;
+  font-size: 30px;
+  font-weight: 600;
+  background: linear-gradient(to right, rgb(92, 222, 255), rgb(248, 122, 122));
+  padding: 6px 0px;
+  border-radius: 10px;
+  text-align: center;
+  justify-content: center;
+
+}
