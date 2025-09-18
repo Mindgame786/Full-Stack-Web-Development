@@ -11,25 +11,30 @@ import "react-toastify/dist/ReactToastify.css";
 
 function outputBox(value) {
   return `w-full min-h-[56px] text-left py-3 px-4  rounded-md transition break-words whitespace-pre-wrap font-sans
-    ${value
-      ? "bg-white text-blue-700 border border-blue-200 shadow-sm font-semibold"
-      : "bg-transparent text-gray-400 border border-transparent font-medium"
+    ${value ? "bg-white text-blue-700 border border-blue-200 shadow-sm font-semibold" : "bg-transparent text-gray-400 border border-transparent font-medium"
     }`;
 }
+
+
 
 /* -------------------------
    Main Component
    ------------------------- */
+
+
 export default function FormWithOutput() {
   // Form inputs
   const [name, setName] = useState("");
   const [password, setPassword] = useState("");
   const [tel, setTel] = useState("");
 
+
+
   // Live Preview state (real-time updates)
   const [liveName, setLiveName] = useState("");
   const [livePassword, setLivePassword] = useState("");
   const [liveTel, setLiveTel] = useState("");
+
 
   // Real-time update for Live Preview
   const handleNameChange = (e) => {
@@ -46,6 +51,9 @@ export default function FormWithOutput() {
     setTel(e.target.value);
     setLiveTel(e.target.value);
   };
+
+
+
 
   // Handle form submission
   const handleSubmit = (e) => {
@@ -78,6 +86,8 @@ export default function FormWithOutput() {
     setLivePassword("");
     setLiveTel("");
 
+
+
     // Toast notification for reset
     toast.info("Form and Live Preview cleared!", {
       position: "top-right",
@@ -88,6 +98,9 @@ export default function FormWithOutput() {
       draggable: true,
     });
   };
+
+
+
 
   return (
     <div className="min-h-[70vh] bg-gradient-to-br mt-4 from-blue-100 shadow-lg rounded-md to-red-200 via-amber-200 py-6 font-sans">

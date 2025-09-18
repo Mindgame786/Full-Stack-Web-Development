@@ -8,6 +8,7 @@ function App() {
         React + Vite + Tailwind
       </h1>
       <ControlledComponents />
+
     </>
   )
 }
