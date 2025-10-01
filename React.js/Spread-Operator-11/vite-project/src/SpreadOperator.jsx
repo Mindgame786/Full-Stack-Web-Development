@@ -38,8 +38,8 @@ function SpreadOperator() {
 
       <ul className=" stroke-cyan-500">
         {
-          Students.map((student, index) =>
-            (<li className=" font-sans list-disc stroke-cyan-500 text-blue-700 text-xl  bg-zinc-100 stroke-1 pl-2 pt-2 font-bold text-left" key={index}>{student}</li>)
+          Students.map((studentName, index) =>
+            (<li className=" font-sans list-disc stroke-cyan-500 text-blue-700 text-xl  bg-zinc-100 stroke-1 pl-2 pt-2 font-bold text-left" key={index}>{studentName}</li>)
 
           )
         }
