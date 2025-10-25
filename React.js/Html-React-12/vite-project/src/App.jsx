@@ -2,10 +2,10 @@ import './App.css'
 import GetDataCheckBox from './GetDataCheckBox';
 import GetDataRadioDropDown from './GetDataRadioDropDown';
 import Section from './Section';
-import TableArrays from './TableArrays';
-import TableArrayWithAi from './TableArrayWithAi';
-import TableAddClassesORShortcutcode from './TableAddClassesORShortcutcode';
-import TDCOS from './TDCOS';
+// import TableArrays from './TableArrays';
+// import TableArrayWithAi from './TableArrayWithAi';
+import SimpleTable from './SimpleTable';
+import TableGraphData from './TableGraphData';
 import WithAISelectCityGender from './WithAISelectCityGender';
 
 function App() {
@@ -16,13 +16,13 @@ function App() {
       </h1>
 
       <GetDataCheckBox />
-      <Section />
-      <WithAISelectCityGender />
-      {/* <GetDataRadioDropDown /> */}
+      <GetDataRadioDropDown />
+      <SimpleTable />
+      {/* <TableGraphData /> */}
       {/* <TableArrays /> */}
       {/* <TableArrayWithAi /> */}
-      <TableAddClassesORShortcutcode />
-      <TDCOS />
+      {/* <WithAISelectCityGender /> */}
+      {/* <Section /> */}
 
 
     </>
