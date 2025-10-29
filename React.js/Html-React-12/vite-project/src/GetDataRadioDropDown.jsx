@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// Most USe using  Array in this project...
+
 function GetDataRadioDropDown() {
   const [gender, setGender] = useState("Male");
   const [city, setCity] = useState("Lahore");
@@ -35,19 +37,21 @@ function GetDataRadioDropDown() {
 
           <div className="flex gap-8 pl-2">
 
-            {genders.map((M) => (
+            {genders.map((Option) => (
 
-              <label key={M} className="flex items-center gap-2 text-gray-700 font-sans cursor-pointer hover:text-blue-600 transition">
+              <label key={Option} className="flex items-center gap-2 text-gray-700 font-sans cursor-pointer hover:text-blue-600 transition">
 
                 <input
                   type="radio"
                   name="M"
-                  value={M}
-                  checked={gender === M}
+                  value={Option}
+                  checked={gender === Option}
                   onChange={(event) => setGender(event.target.value)}
                   className="accent-blue-500 w-5 h-5" />
 
-                {M}
+                <span>
+                  {Option}
+                </span>
 
 
               </label>
@@ -56,9 +60,12 @@ function GetDataRadioDropDown() {
           </div>
 
 
+
           <p className="mt-3 text-gray-600 text-sm">
             Selected Gender: <span className="font-semibold text-blue-600">{gender}</span>
           </p>
+
+
         </div>
 
 
@@ -76,10 +83,10 @@ function GetDataRadioDropDown() {
 
 
 
-            {cities.map((citee) => (
+            {cities.map((Pak) => (
 
-              <option key={citee} value={citee}>
-                {citee}
+              <option key={Pak} value={Pak}>
+                {Pak}
               </option>
 
             ))}

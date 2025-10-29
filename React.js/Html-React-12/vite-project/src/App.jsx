@@ -2,8 +2,8 @@ import './App.css'
 import GetDataCheckBox from './GetDataCheckBox';
 import GetDataRadioDropDown from './GetDataRadioDropDown';
 import Section from './Section';
-// import TableArrays from './TableArrays';
-// import TableArrayWithAi from './TableArrayWithAi';
+import TableArrays from './TableArrays';
+import TableArrayWithAi from './TableArrayWithAi';
 import SimpleTable from './SimpleTable';
 import TableGraphData from './TableGraphData';
 import WithAISelectCityGender from './WithAISelectCityGender';

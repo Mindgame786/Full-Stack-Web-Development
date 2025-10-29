@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 export default function GetDataCheckBox() {
-  const [hobbies, setHobbies] = useState([]);
+  const [hobbies, setHobbies] = useState(['Music']);
 
   const handleHobbyChange = (event) => {
     const value = event.target.value;
@@ -31,6 +31,9 @@ export default function GetDataCheckBox() {
       <h2 className="text-2xl md:text-3xl font-semibold text-cyan-600 mb-4 text-center">
         Select Your Hobbies
       </h2>
+
+
+      {/* Here Start From Main Coding */}
 
       {/* Checkbox Card */}
       <div className="bg-gradient-to-bl from-green-200 to-teal-200 p-6 rounded-2xl shadow-lg w-full max-w-md flex flex-col gap-4">
