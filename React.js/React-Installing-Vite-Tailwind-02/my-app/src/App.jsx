@@ -32,7 +32,7 @@ function App() {
       <div className="p-6 bg-gray-800 rounded-2xl shadow-lg text-center">
         <button
           onClick={() => setCount((count) => count + 1)}
-          className="px-6 py-2 bg-blue-400 rounded-lg hover:bg-blue-700 transition animate-bounce"        >
+          className="px-6 py-2 bg-blue-400 rounded-lg hover:bg-blue-700 transition  animate-bounce"        >
           count is {count}
         </button>
         <p className="mt-4 text-gray-300">

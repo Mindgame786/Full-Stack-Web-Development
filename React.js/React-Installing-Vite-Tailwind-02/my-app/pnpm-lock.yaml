@@ -17,6 +17,9 @@ importers:
       node:
         specifier: ^20.19.5
         version: 20.19.5
+      node.js:
+        specifier: 0.0.1-security
+        version: 0.0.1-security
       postcss:
         specifier: ^8.5.6
         version: 8.5.6
@@ -1006,6 +1009,9 @@ packages:
 
   node-releases@2.0.19:
     resolution: {integrity: sha512-xxOWJsBKtzAq7DY0J+DTzuz58K8e7sJbdgwkbMWQe8UYB6ekmsQ45q0M/tJDsGaZmbC+l7n57UV8Hl5tHxO9uw==}
+
+  node.js@0.0.1-security:
+    resolution: {integrity: sha512-8tWQiyg/3ggdLTrtfgj/NxmZpC20eB1U5VNkqt2dbelpcr3NrfjpEE3DgifpBOCJ4Xu9Obvu8iju63ViQW3Hvg==}
 
   node@20.19.5:
     resolution: {integrity: sha512-9fJOHEP8AVrwpbhlUxnbudW8IbkseQVxl4yNQyI/rDfP+gNwKEmfPtBc/Luyf677i5Y0HKIBHiApiB9S9vvxKw==}
@@ -2023,6 +2029,8 @@ snapshots:
   node-bin-setup@1.1.4: {}
 
   node-releases@2.0.19: {}
+
+  node.js@0.0.1-security: {}
 
   node@20.19.5:
     dependencies:
