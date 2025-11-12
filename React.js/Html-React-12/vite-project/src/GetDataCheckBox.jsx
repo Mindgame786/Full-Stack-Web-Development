@@ -20,7 +20,7 @@ export default function GetDataCheckBox() {
 
 
   return (
-    <div className="min-h-screen flex flex-col items-center mt-4 justify-start bg-gradient-to-br from-teal-50 via-green-50 to-teal-100 p-6">
+    <div className="min-h-screen flex flex-col items-center mt-4 justify-start bg-linear-to-tr from-teal-100 via-green-100 to-teal-100 p-6">
 
 
       {/* Header */}
@@ -36,7 +36,7 @@ export default function GetDataCheckBox() {
       {/* Here Start From Main Coding */}
 
       {/* Checkbox Card */}
-      <div className="bg-gradient-to-bl from-green-200 to-teal-200 p-6 rounded-2xl shadow-lg w-full max-w-md flex flex-col gap-4">
+      <div className=" bg-linear-to-bl from-green-200 to-teal-500 p-6 rounded-2xl shadow-lg w-full max-w-md flex flex-col gap-4">
 
 
         {hobbyOptions.map((hobby) => (

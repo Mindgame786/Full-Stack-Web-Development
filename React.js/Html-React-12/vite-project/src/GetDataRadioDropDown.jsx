@@ -14,7 +14,7 @@ function GetDataRadioDropDown() {
 
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 p-6 mt-4 rounded-2">
+    <div className="min-h-screen flex items-center justify-center bg-linear-to-r from-gray-50 to-gray-100 p-6 mt-4 rounded-2">
 
 
 

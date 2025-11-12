@@ -7,6 +7,8 @@ import TableArrayWithAi from './TableArrayWithAi';
 import SimpleTable from './SimpleTable';
 import TableGraphData from './TableGraphData';
 import WithAISelectCityGender from './WithAISelectCityGender';
+import CardsTable from './CardsTable';
+import NestedLoop from './NestedLoop';
 
 function App() {
   return (
@@ -18,6 +20,8 @@ function App() {
       <GetDataCheckBox />
       <GetDataRadioDropDown />
       <SimpleTable />
+      <CardsTable />
+      <NestedLoop />
       {/* <TableGraphData /> */}
       {/* <TableArrays /> */}
       {/* <TableArrayWithAi /> */}

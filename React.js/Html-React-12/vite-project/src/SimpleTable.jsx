@@ -1,3 +1,5 @@
+import CardsTable from "./CardsTable";
+
 function TableArrays() {
   const headings = ["ID", "Name", "Age", "Salary", "Email"];
 
@@ -22,26 +24,33 @@ function TableArrays() {
 
         <thead className="bg-gray-100 text-gray-700">
           <tr>
+
             {headings.map(h => <th key={h} className="px-4 py-2 border">
               {h}
             </th>)}
+
           </tr>
         </thead>
 
 
         <tbody>
-          {employees.map((e, i) => (
-            <tr key={e.id} className={i % 2 ? "bg-gray-50" : "bg-white"}>
+          {
+            employees.map((e, i) => (
+              <tr key={e.id} className={i % 2 ? "bg-gray-50" : "bg-white"}>
 
-              <td className="px-4 py-2 border text-center">{e.id}</td>
-              <td className="px-4 py-2 border text-center">{e.name}</td>
-              <td className="px-4 py-2 border text-center">{e.age}</td>
-              <td className="px-4 py-2 border text-center">{e.salary}</td>
-              <td className="px-4 py-2 border text-center">{e.email}</td>
+                <td className="px-4 py-2 border text-center">{e.id}</td>
+                <td className="px-4 py-2 border text-center">{e.name}</td>
+                <td className="px-4 py-2 border text-center">{e.age}</td>
+                <td className="px-4 py-2 border text-center">{e.salary}</td>
+                <td className="px-4 py-2 border text-center">{e.email}</td>
 
-            </tr>
-          ))}
+              </tr>
+            ))
+
+          }
         </tbody>
+
+
       </table>
     </div>
   );
