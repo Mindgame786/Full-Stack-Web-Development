@@ -54,7 +54,7 @@ console.log(car);
 // Its default property of an  object.Basically  Prototype itself is an  object,  which have different properties & methods.
 
 // Here use Array ,Because Array is  a  basically  object:
-// Array in  Prototype in  pop map push slice lenght concate,
+// Array in  Prototype in  pop map push slice length concate,
 
 let Color = ["Blue", "Red", "Green", "Yellow", "Orange"];
 console.log(Color);

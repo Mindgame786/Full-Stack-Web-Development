@@ -45,7 +45,7 @@ addNum(22, 43);
 
 function addNum(a, b) {
   return a + b;
-  // console.log("Funcitons is not Print because return not execute after return ok")
+  console.log("Functions is not Print because return not execute after return ok")
 }
 
 let sum = addNum(34, 39);

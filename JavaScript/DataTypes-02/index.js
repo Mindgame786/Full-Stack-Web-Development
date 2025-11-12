@@ -22,9 +22,9 @@ let salary = 60000;
 let Name = "UMARJUTT";
 let muslim = true;
 let age;
-let chk = null;
+let chk = null;             // Empty Un-Known Value :
 let var1 = Symbol("Description of Product");
-let var2 = BigInt(398838484934);
+let var2 = BigInt(398838484934);     //  For Big Number Asign :
 
 
 console.log("Salary:", salary);
@@ -69,20 +69,21 @@ console.log("var2", typeof var2)
 
 //   (1) Objects:
 // Objects are collections of different values of different types.
+
 //  Arrays are type of object or branch of object:
 
 
 
 
 let person = {
-  firstName: 'UMARJUTT',   //  Here:  firstName is here Key  or 'UMARJUTT' is a Value.
-  lastName: 'Naeem',
+  firstName: 'UMAR',   //  Here:  firstName is here Key  or 'UMARJUTT' is a Value.
+  lastName: 'JUTT',
   age: 30,
   salary: 60000,
   perm: true,
 };
-// console.log(person);
-// console.log(typeof person);
+console.log(person);
+console.log(typeof person);
 
 
 
@@ -116,9 +117,14 @@ let numbers = [1, 2, 3, 4, 5];
 // (3) Function:
 //  Define:   Functions are blocks of designed to perform specific taskd and can be stored in variables.
 
-function greet(name) {
-  return ` Hello ,${name}!`;
+
+// Greet : here Function Name
+
+function greet(Hello) {
+
+  return ` Hello ,${Hello}!`;
 }
+
 console.log(greet("UMAR"));
 
 
