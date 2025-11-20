@@ -104,6 +104,7 @@ export default function FormWithOutput() {
 
   return (
     <div className="min-h-[70vh] bg-gradient-to-br mt-4 from-blue-100 shadow-lg rounded-md to-red-200 via-amber-200 py-6 font-sans">
+    
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col md:flex-row gap-6 items-stretch">
 
